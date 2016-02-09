@@ -38,22 +38,22 @@ If you need to configure 2 extensions at the same time, use a comma between them
         CREATE (j:Company {name:'j'})
         CREATE (k:Company {name:'k'})
         CREATE
-          (b)-[:SIMILAR {score:0.80}]->(c),
-          (c)-[:SIMILAR {score:0.80}]->(b),
-          (d)-[:SIMILAR {score:0.80}]->(a),
-          (e)-[:SIMILAR {score:0.80}]->(b),
-          (e)-[:SIMILAR {score:0.80}]->(d),
-          (e)-[:SIMILAR {score:0.80}]->(f),
-          (f)-[:SIMILAR {score:0.80}]->(b),
-          (f)-[:SIMILAR {score:0.80}]->(e),
-          (g)-[:SIMILAR {score:0.80}]->(b),
-          (g)-[:SIMILAR {score:0.80}]->(e),
-          (h)-[:SIMILAR {score:0.80}]->(b),
-          (h)-[:SIMILAR {score:0.80}]->(e),
-          (i)-[:SIMILAR {score:0.80}]->(b),
-          (i)-[:SIMILAR {score:0.80}]->(e),
-          (j)-[:SIMILAR {score:0.80}]->(e),
-          (k)-[:SIMILAR {score:0.80}]->(e);
+          (b)-[:SIMILAR]->(c),
+          (c)-[:SIMILAR]->(b),
+          (d)-[:SIMILAR]->(a),
+          (e)-[:SIMILAR]->(b),
+          (e)-[:SIMILAR]->(d),
+          (e)-[:SIMILAR]->(f),
+          (f)-[:SIMILAR]->(b),
+          (f)-[:SIMILAR]->(e),
+          (g)-[:SIMILAR]->(b),
+          (g)-[:SIMILAR]->(e),
+          (h)-[:SIMILAR]->(b),
+          (h)-[:SIMILAR]->(e),
+          (i)-[:SIMILAR]->(b),
+          (i)-[:SIMILAR]->(e),
+          (j)-[:SIMILAR]->(e),
+          (k)-[:SIMILAR]->(e);
 
 6. Call the pagerank endpoint:
 
