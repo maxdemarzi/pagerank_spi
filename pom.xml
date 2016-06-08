@@ -9,7 +9,7 @@
     <version>1.0</version>
 
     <properties>
-        <neo4j.version>2.3.2</neo4j.version>
+        <neo4j.version>3.0.2</neo4j.version>
         <jmh.version>1.10.5</jmh.version>
         <fastutil.version>7.0.2</fastutil.version>
     </properties>
